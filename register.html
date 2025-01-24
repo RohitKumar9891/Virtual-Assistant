@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registerForm" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your full name" required autocomplete="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your email id" required autocomplete="email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter Your phone Number" required autocomplete="tel">
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" minlength="8" maxlength="20" placeholder="Enter Your password" required>
+        <br><br>
+
+        <label for="cpass">Confirm Password:</label>
+        <input type="password" id="cpass" name="confirm_password" minlength="8" maxlength="20" placeholder="Confirm Your password" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <script src="register.js"></script>
+</body>
+</html>
